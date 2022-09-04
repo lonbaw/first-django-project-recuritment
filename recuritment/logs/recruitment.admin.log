@@ -1,0 +1,477 @@
+2022-09-04 00:17:36,383 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 00:17:52,622 interview.admin 32 INFO     admin exported 1 candidate records
+2022-09-04 00:20:27,840 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/manage.py changed, reloading.
+2022-09-04 00:27:17,602 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 00:31:55,327 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/recuritment/urls.py changed, reloading.
+2022-09-04 00:31:55,869 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 00:32:13,139 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/recuritment/urls.py changed, reloading.
+2022-09-04 00:32:13,645 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 00:32:25,753 django.request 230 WARNING  Not Found: /
+2022-09-04 00:32:41,040 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/recuritment/urls.py changed, reloading.
+2022-09-04 00:32:41,542 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 00:34:15,374 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/models.py changed, reloading.
+2022-09-04 00:34:15,877 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 00:42:50,974 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 00:42:51,504 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 00:42:54,079 django.request 230 ERROR    Internal Server Error: /admin/interview/candidate/5/change/
+Traceback (most recent call last):
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 680, in get_form
+    readonly_fields = self.get_readonly_fields(request, obj)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 56, in get_readonly_fields
+    group_names = self.get_group_names(request.user)
+AttributeError: 'CandidateAdmin' object has no attribute 'get_group_names'
+2022-09-04 00:44:10,341 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 00:44:10,858 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 00:45:00,338 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 00:45:00,860 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 00:45:06,160 django.request 230 ERROR    Internal Server Error: /admin/interview/candidate/5/change/
+Traceback (most recent call last):
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 680, in get_form
+    readonly_fields = self.get_readonly_fields(request, obj)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 63, in get_readonly_fields
+    if 'interviewer' in group_name:
+NameError: name 'group_name' is not defined
+2022-09-04 00:45:15,125 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 00:45:15,645 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 00:45:37,540 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 00:45:37,540 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 00:45:41,099 django.request 230 ERROR    Internal Server Error: /admin/interview/candidate/5/change/
+Traceback (most recent call last):
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 680, in get_form
+    readonly_fields = self.get_readonly_fields(request, obj)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 62, in get_readonly_fields
+    group_names = self.get_group_names(request.user)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 58, in get_group_names
+    group_names.appe(g.name)
+AttributeError: 'list' object has no attribute 'appe'
+2022-09-04 00:45:49,187 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 00:45:49,728 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 00:46:09,994 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 00:46:09,994 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 00:46:14,478 interview.admin 64 INFO     interviewer is in user's group for test2
+2022-09-04 00:46:14,484 interview.admin 64 INFO     interviewer is in user's group for test2
+2022-09-04 01:02:35,107 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 01:02:35,650 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 01:03:25,125 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 01:03:25,627 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 03:59:35,065 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 03:59:35,618 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:02:09,975 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:02:10,510 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:02:25,738 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:02:26,202 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:02:39,853 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:02:39,853 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:02:41,653 django.request 230 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1697, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 76, in get_changelist_instance
+    self.list_editable = self.get_list_editable(request)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 71, in get_list_editable
+    group_names = self.get_group_names(request)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 57, in get_group_names
+    for g in user.groups.all():
+AttributeError: 'WSGIRequest' object has no attribute 'groups'
+2022-09-04 04:03:50,157 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:03:51,273 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:03:53,760 django.request 230 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1697, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 76, in get_changelist_instance
+    self.list_editable = self.get_list_editable(request)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 71, in get_list_editable
+    group_names = self.get_group_names(request)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 57, in get_group_names
+    for g in user.groups.all():
+AttributeError: 'WSGIRequest' object has no attribute 'groups'
+2022-09-04 04:04:28,796 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:04:29,307 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:08:20,465 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:08:21,027 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:08:23,538 django.request 230 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1697, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 76, in get_changelist_instance
+    self.list_editable = self.get_list_editable(request)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 71, in get_list_editable
+    group_names = self.get_group_names(request)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 57, in get_group_names
+    for g in user.groups.all():
+AttributeError: 'WSGIRequest' object has no attribute 'groups'
+2022-09-04 04:11:38,975 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:11:39,482 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:12:26,022 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/base.py changed, reloading.
+2022-09-04 04:12:26,432 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:12:28,561 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/base.py changed, reloading.
+2022-09-04 04:12:28,904 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:14:28,565 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:18:38,264 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:20:23,378 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/recuritment/urls.py changed, reloading.
+2022-09-04 04:20:23,899 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:20:56,805 django.request 230 WARNING  Not Found: /
+2022-09-04 04:34:48,692 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:34:49,207 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:35:01,439 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:35:01,982 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:35:50,308 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:35:50,813 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:35:59,671 django.request 230 ERROR    Internal Server Error: /admin/interview/candidate/5/change/
+Traceback (most recent call last):
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1573, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 76, in get_fieldsets
+    return cf.default_fieldsets
+AttributeError: module 'interview.candidate_field' has no attribute 'default_fieldsets'
+2022-09-04 04:36:31,457 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:36:33,462 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:36:36,838 django.request 230 ERROR    Internal Server Error: /admin/interview/candidate/5/change/
+Traceback (most recent call last):
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1573, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 76, in get_fieldsets
+    return cf.default_fieldsets
+AttributeError: module 'interview.candidate_field' has no attribute 'default_fieldsets'
+2022-09-04 04:38:20,571 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/candidate_field.py changed, reloading.
+2022-09-04 04:38:21,097 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:38:44,461 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:38:44,461 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:38:47,422 interview.admin 65 INFO     interviewer is in user's group for test2
+2022-09-04 04:38:47,428 interview.admin 65 INFO     interviewer is in user's group for test2
+2022-09-04 04:39:42,867 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:39:42,867 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:40:03,490 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:40:03,490 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:40:07,174 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:40:07,174 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:48:29,295 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:48:29,295 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:48:32,020 interview.admin 65 INFO     interviewer is in user's group for interviewer_01
+2022-09-04 04:48:32,025 interview.admin 65 INFO     interviewer is in user's group for interviewer_01
+2022-09-04 04:48:56,049 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:48:56,049 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:48:58,997 interview.admin 65 INFO     interviewer is in user's group for interviewer_02
+2022-09-04 04:48:59,004 interview.admin 65 INFO     interviewer is in user's group for interviewer_02
+2022-09-04 04:50:20,503 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:50:20,503 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:50:35,878 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:50:36,448 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:56:10,636 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:56:11,137 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:56:35,323 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:56:35,828 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:56:49,952 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:56:50,467 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:57:11,652 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 04:57:12,137 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 04:57:29,829 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:57:29,829 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 04:57:31,347 django.request 230 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1697, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 749, in get_changelist_instance
+    sortable_by,
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 57, in __init__
+    self.root_queryset = model_admin.get_queryset(request)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 83, in get_queryset
+    if request.user.is_supperuser or 'hr' in group_names:
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'is_supperuser'
+2022-09-04 05:00:12,176 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 05:00:12,716 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:01:01,232 interview.admin 34 INFO     interviewer_01 exported 1 candidate records
+2022-09-04 05:03:43,018 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 05:03:43,569 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:03:56,836 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 05:03:57,316 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:04:06,519 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 05:04:07,032 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:04:49,453 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 05:04:49,957 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:05:51,692 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 05:05:52,185 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:07:47,601 interview.admin 34 INFO     interviewer_01 exported 1 candidate records
+2022-09-04 05:15:33,151 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/base.py changed, reloading.
+2022-09-04 05:15:33,577 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:15:34,688 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/base.py changed, reloading.
+2022-09-04 05:15:35,047 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:28:17,068 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/local.py changed, reloading.
+2022-09-04 05:28:17,429 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:28:18,535 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/local.py changed, reloading.
+2022-09-04 05:28:18,887 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:29:03,374 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:29:46,688 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:48:19,885 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:48:28,245 django.request 230 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 19, in notify_interviewer
+    interviewers = obj.first_interviewer_user.username + ";" + interviewers
+AttributeError: 'NoneType' object has no attribute 'username'
+2022-09-04 05:48:48,110 django.request 230 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/root/VscodeProjects/django_py36/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/root/VscodeProjects/django_py36/recuritment/interview/admin.py", line 22, in notify_interviewer
+    send_dingtalk_message.delay("候选人 %s 进入面试环节，亲爱的面试官，请准备好面试： %s" % (candidates, interviewers) )
+NameError: name 'send_dingtalk_message' is not defined
+2022-09-04 05:49:47,850 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 05:49:48,339 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:50:07,644 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 05:50:08,178 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 05:50:11,340 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/interview/admin.py changed, reloading.
+2022-09-04 05:50:11,929 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 06:11:13,809 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/base.py changed, reloading.
+2022-09-04 06:11:14,302 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 06:14:41,476 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/base.py changed, reloading.
+2022-09-04 06:14:41,973 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 06:16:47,693 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/base.py changed, reloading.
+2022-09-04 06:16:48,325 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 06:18:06,988 django.request 230 WARNING  Not Found: /login
+2022-09-04 06:18:16,415 django.request 230 WARNING  Not Found: /accounts
+2022-09-04 06:18:25,056 django.request 230 WARNING  Not Found: /
+2022-09-04 06:18:37,385 django.request 230 WARNING  Not Found: /
+2022-09-04 06:21:52,509 django.request 230 WARNING  Not Found: /
+2022-09-04 06:22:05,916 django.request 230 WARNING  Not Found: /
+2022-09-04 06:22:14,441 django.request 230 WARNING  Not Found: /
+2022-09-04 06:23:45,033 django.request 230 WARNING  Not Found: /
+2022-09-04 06:24:25,975 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 06:25:08,641 django.request 230 WARNING  Not Found: /
+2022-09-04 06:25:20,054 django.request 230 WARNING  Not Found: /accounts/registrater
+2022-09-04 06:25:26,330 django.request 230 WARNING  Not Found: /
+2022-09-04 06:25:37,059 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/base.py changed, reloading.
+2022-09-04 06:25:37,585 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 06:25:43,950 django.request 230 WARNING  Not Found: /accounts/profile/
+2022-09-04 06:25:51,710 django.request 230 WARNING  Not Found: /accounts/profile/
+2022-09-04 06:25:58,207 django.request 230 WARNING  Not Found: /accounts/profile/
+2022-09-04 06:27:01,801 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/base.py changed, reloading.
+2022-09-04 06:27:02,397 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 06:27:06,835 django.request 230 WARNING  Not Found: /accounts/
+2022-09-04 06:53:10,932 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 06:53:10,932 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 06:53:20,228 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 06:53:20,228 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 06:53:20,515 django.request 230 WARNING  Not Found: /
+2022-09-04 06:53:29,161 django.request 230 WARNING  Not Found: /
+2022-09-04 09:07:05,368 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/base.py changed, reloading.
+2022-09-04 09:07:06,019 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 09:07:27,512 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 09:07:27,512 django_python3_ldap.ldap 227 WARNING  LDAP bind failed: LDAPInvalidCredentialsResult - 49 - invalidCredentials - None - None - bindResponse - None
+2022-09-04 09:07:35,468 django.request 230 WARNING  Not Found: /resume/add/
+2022-09-04 09:07:52,962 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/settings/base.py changed, reloading.
+2022-09-04 09:07:53,530 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 09:08:55,460 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/jobs/urls.py changed, reloading.
+2022-09-04 09:08:56,059 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2022-09-04 09:09:02,252 django.utils.autoreload 251 INFO     /root/VscodeProjects/django_py36/recuritment/jobs/urls.py changed, reloading.
+2022-09-04 09:09:02,773 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
